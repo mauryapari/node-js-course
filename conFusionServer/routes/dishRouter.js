@@ -38,7 +38,8 @@ dishRouter.route('/')
         res.setHeader('Content-Type', 'application/json');
         res.json(resp);
     }, (err) => next(err))
-    .catch((err) => next(err));    });
+    .catch((err) => next(err));    
+});
 
 dishRouter.route('/:dishId')
 .get((req,res,next) => {
